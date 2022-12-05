@@ -13,6 +13,7 @@
     if(![FIRApp defaultApp]) {
         [FIRApp configure];
     }
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
 }
 
 - (void)requestPermission:(CDVInvokedUrlCommand *)command {
